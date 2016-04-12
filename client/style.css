@@ -74,7 +74,7 @@ h1 {
     margin-right: auto;
     text-align: center;
     margin: 0;
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: "Verdana", Gadget, sans-serif;
 }
 
 .lobbyForm {
@@ -348,6 +348,7 @@ h3.lobbyName {
     padding-top: auto;
     padding-bottom: auto;
     font-size: 1em;
+    font-family: "Futura", Gadget, sans-serif;
 }
 
 h3.numWins {
