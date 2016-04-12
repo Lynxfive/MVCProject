@@ -61,7 +61,7 @@ nav:nth-child(1) {
 }
 
 .navlink a:hover {
-    transition: background-color 0.8s ease;
+    transition: background-color 0.4s ease;
     color: black;
     border-radius: 3px;
     background-color: white;
@@ -160,7 +160,7 @@ h1 {
     height: 300px;
     width: 350px;
     margin: 0 auto;
-    padding-top: 350px;
+    padding-top: 150px;
     font-size: 1.2em;
 }
 
@@ -286,7 +286,7 @@ h1 {
 }
 
 .lobby:hover {
-    transition: border-color 0.2s ease-out;
+    transition: border-color 0.4s ease-out;
     border-color: rgba(255,255,255, 0.8);
     transition: background-color 2.6s ease-out;
     background-color: #ffb366;
