@@ -4,9 +4,10 @@ block append style
 block body
   nav
     a(href="/login")
-      img#logo(src="/assets/img/face.png", alt="face logo")
+      img#logo(src="/assets/img/face.png", alt="home logo")
     .navlink
       a(href="/logout") Log out
+  h1 JumpPong
   section#makeLobby
     form#lobbyForm(class="lobbyForm", name="lobbyForm", action="/lobbies", method="POST")
       label(for="name") Name: 

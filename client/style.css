@@ -57,13 +57,24 @@ nav:nth-child(1) {
     padding: 5px;
     background-color: #ff471a;
     transition: background-color 0.4s ease;
+    border: 1px solid black;
 }
 
 .navlink a:hover {
     transition: background-color 0.8s ease;
     color: black;
+    border-radius: 3px;
     background-color: white;
     border-color: black;
+}
+
+h1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: 0;
+    font-family: "Arial Black", Gadget, sans-serif;
 }
 
 .lobbyForm {
@@ -74,6 +85,7 @@ nav:nth-child(1) {
     width: 700px;
     margin-top:10px;
     padding-top:10px;
+    border: 1px solid black;
     background-color: #ff471a;
     border-radius: 10px;
     
