@@ -9,6 +9,7 @@ var router = function(app){
     app.post("/signup", mid.requiresSecure, mid.requiresLogout, controllers.Account.signup);
     app.get("/logout", mid.requiresLogin, controllers.Account.logout);
 	app.get("/leaderboard", mid.requiresLogin, controllers.Account.leaderboard);
+    app.get("/profile", mid.requiresLogin, controllers.Account.profile);
 	app.get("/game", mid.requiresLogin, controllers.Lobby.play);
 	//app.get("/game", mid.requiresLogin, function(req, res){res.sendFile(path.join(__dirname + '/views/index.html'));});
     app.get("/lobbies", mid.requiresLogin, controllers.Lobby.lobbyPage);

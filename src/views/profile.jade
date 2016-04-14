@@ -10,19 +10,19 @@ block body
   h1 JumpPong
   section#buttons
     .navlink
-      a(href="/profile") Profile
-    .navlink
       a(href="/lobbies") Lobbies
-  section#leader
-    if !users || users.length == 0
-        div.leader
-            h3.emptyLobby No Users yet
+    .navlink
+      a(href="/leaderboard") Leaderboards
+  section#userProfile
+    if !user || user.length == 0
+        div.profile
+            h3.emptyLobby No Profile
     else
-        each val in users
-            div.leader
-                img(class="lobbyFace", src="/assets/img/gamecontroller.png", alt="face")
-                h3.lobbyName Name: #{val.username}
-                h3.numWins Wins: #{val.wins}
+        div.profile
+            img(class="userImage", src="/assets/img/gamecontroller.png", alt="face")
+            h3.userName Name: #{user.username}
+            h3.userWins Wins: #{user.wins}
+            h3.userGames Games Played: #{0}
   #lobbyMessage
     img#speech(src="/assets/img/speech.png", alt="speech box")
     h3

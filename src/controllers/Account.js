@@ -15,6 +15,19 @@ var leaderboard = function(req, res){
 	    
 };
 
+var profile = function(req, res){
+  Account.AccountModel.findByUsername(req.session.account.username, function(err, user){
+       if (err){
+           console.log(err);
+           return res.status(400).json({error: 'An error occurred'});
+       } 
+       //console.log(user.wins);
+        
+      res.render('profile', {csrfToken: req.csrfToken(), user: user});
+    });
+      
+};
+
 var signupPage = function(req, res){
   res.render('signup', { csrfToken: req.csrfToken() }); 
   
@@ -84,6 +97,7 @@ var signup = function(req, res){
 module.exports.loginPage = loginPage;
 module.exports.login = login;
 module.exports.leaderboard = leaderboard;
+module.exports.profile = profile;
 module.exports.logout = logout;
 module.exports.signupPage = signupPage;
 module.exports.signup = signup;
